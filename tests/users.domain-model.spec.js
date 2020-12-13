@@ -1,13 +1,11 @@
 /* eslint-disable arrow-body-style */
 
-import chai from 'chai';
+import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
 import { getUserContactData } from '../src/domain-models/users.domain-model';
 
 chai.use(chaiAsPromised);
-
-const { expect } = chai;
 
 describe('users.domain-model', () => {
   describe('getUserContactData', () => {
