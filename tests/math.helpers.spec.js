@@ -70,17 +70,17 @@ describe('Math helpers', () => {
 
     it('should throw an error if non-natural value or 0 passed', () => {
       expect(getFactorial.bind(null)).to.throw(Error);
-      expect(getFactorial.bind(2.2)).to.throw(Error);
-      expect(getFactorial.bind(-2)).to.throw(Error);
-      expect(getFactorial.bind(-2.2)).to.throw(Error);
-      expect(getFactorial.bind(NaN)).to.throw(Error);
-      expect(getFactorial.bind(Infinity)).to.throw(Error);
-      expect(getFactorial.bind(-Infinity)).to.throw(Error);
-      expect(getFactorial.bind('hello')).to.throw(Error);
-      expect(getFactorial.bind('12')).to.throw(Error);
-      expect(getFactorial.bind(true)).to.throw(Error);
-      expect(getFactorial.bind(false)).to.throw(Error);
-      expect(getFactorial.bind(null)).to.throw(Error);
+      expect(getFactorial.bind(null, 2.2)).to.throw(Error);
+      expect(getFactorial.bind(null, -2)).to.throw(Error);
+      expect(getFactorial.bind(null, -2.2)).to.throw(Error);
+      expect(getFactorial.bind(null, NaN)).to.throw(Error);
+      expect(getFactorial.bind(null, Infinity)).to.throw(Error);
+      expect(getFactorial.bind(null, -Infinity)).to.throw(Error);
+      expect(getFactorial.bind(null, 'hello')).to.throw(Error);
+      expect(getFactorial.bind(null, '12')).to.throw(Error);
+      expect(getFactorial.bind(null, true)).to.throw(Error);
+      expect(getFactorial.bind(null, false)).to.throw(Error);
+      expect(getFactorial.bind(null, null)).to.throw(Error);
     });
   });
 });
