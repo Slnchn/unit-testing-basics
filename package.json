@@ -19,6 +19,7 @@
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "css-loader": "^5.0.1",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -38,6 +39,8 @@
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.0"
+  },
   "description": ""
 }
